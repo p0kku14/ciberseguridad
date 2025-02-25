@@ -14,6 +14,6 @@ var nombre = form.nombre.value.trim();
      if (deporte === "ninguno"||(deporte !== "futbol" && deporte !== "basquetbol" && deporte !== "Tenis" && deporte !== "beisbol")) 
         { alert("Por favor, seleccione un deporte favorito."); return false; } if (contieneEtiquetaHTML(nombre)===true||contieneEtiquetaHTML(edad)===true||contieneEtiquetaHTML(sexo)===true||contieneEtiquetaHTML(deporte)===true) 
             { alert("Por favor, no intente ingresar etiquetas HTML al back."); sexo = null; deporte = null; edad = null; nombre = null; return false; } // Si todo es válido 
- alert("todo bien")           
+ alert("todo bien");           
  return true; } 
             function contieneEtiquetaHTML(texto) { const regex = /<[^>]+>/; return regex.test(texto); }
